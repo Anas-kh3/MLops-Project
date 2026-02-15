@@ -69,7 +69,9 @@ The project uses the **Telco Customer Churn dataset**.
 ## Team
 This project is developed collaboratively by:
 - Mourad Mahmoudi  
-- Anas Khalil  
+- Anas Khalil
+- Miral Jandial
+- Pradeep Kumar Reddy Yarragangireddy
 
 ---
 
@@ -78,3 +80,4 @@ This project is developed collaboratively by:
 ### Environment Setup
 ```bash
 uv sync
+
