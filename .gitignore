@@ -5,3 +5,8 @@ data/raw/
 data/processed/
 .vscode/
 .idea/
+mlruns/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/

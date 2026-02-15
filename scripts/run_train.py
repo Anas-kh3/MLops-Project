@@ -1,11 +1,10 @@
+from src.data.feature_engineering import build_preprocessor
 from src.data.load_data import load_data
 from src.data.preprocess import preprocess
 from src.models.train import train_model
 
-def main():
-    X, y = load_data()
-    X_train, X_test, y_train, y_test = preprocess(X, y)
-    train_model(X_train, X_test, y_train, y_test)
+X, y = load_data()
+X_train, X_test, y_train, y_test = preprocess(X, y)
 
-if __name__ == "__main__":
-    main()
+preprocessor = build_preprocessor(X_train)
+model, metrics = train_model(X_train, X_test, y_train, y_test, preprocessor)
